@@ -5,7 +5,7 @@ class SpecificBookPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def get_book_data(self, book_element):
+    def get_book_data(self):
         try:
             title = self.driver.find_element(By.ID, "productTitle").text
         except:
