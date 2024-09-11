@@ -10,7 +10,7 @@ from сsvDataCleaner import CSVDataCleaner
 import csv
 import time
 def get_source_html(url, max_pages=None):
-    service = Service('D:\\PyWork\\Book Search Automation\\chromedriver\\chromedriver.exe')
+    service = Service('D:\\GitHub Repositories\\Book-Search-Automation\\chromedriver\\chromedriver.exe')
     driver = webdriver.Chrome(service=service)
     search_page = SearchPage(driver)
     book_page = BookPage(driver)
