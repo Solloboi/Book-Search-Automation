@@ -36,7 +36,7 @@ def get_source_html(url, max_pages=None):
                     book_elements = book_page.get_book_elements()
                     book_element = book_elements[i]
                     book_page.open_specific_book(book_element)
-                    book_data = specific_book_page.get_book_data(book_element)
+                    book_data = specific_book_page.get_book_data()
                     books.append(book_data)
 
                     driver.back()
